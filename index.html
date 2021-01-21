@@ -5,8 +5,101 @@
   <head>
 
     <meta name = "viewport" content = "width=device-width">
+    
     <title>Indexed DB Example</title>
 
+    <style>        
+        * {
+
+            box-sizing:border-box;
+            margin:0;
+            padding:0;
+        
+        }
+        
+        html {
+        
+            height:100%;
+            width:100%;
+        
+        }
+        
+        body {
+        
+            align-content:space-around;
+            background-color:#ffffff;
+            color:#ffffff;
+            display:grid;
+            justify-content:space-around;
+            justify-items:space-around;
+            min-height:100%;
+            padding:8px;
+            text-align:center;
+            width:100%;
+        
+        }
+        
+        #button-container {
+        
+            align-content:space-around;
+            display:grid;
+            grid-template-columns:auto auto auto auto;
+            grid-template-rows:auto;
+            justify-content:space-around;
+            padding:16px 0;
+            width:100%;
+        
+        }
+        
+        a {
+        
+            align-content:center;
+            border-color:#c3daed;
+            border-radius:8px;
+            border-style:solid;
+            border-width:2px;
+            cursor:pointer;
+            display:grid;
+            font-size:1.5em;
+            font-weight:800;
+            height:64px;
+            justify-content:center;
+            user-select:none;
+            width:64px;
+        
+        }
+        
+        p {
+        
+            justify-self:center;
+            font-size:1.1em;
+            max-width:320px;
+            text-align:justify;
+        
+        }
+        
+        span {
+        
+            font-weight:800;
+            font-size:1.1em;
+        
+        }
+
+        a.ref {
+            text-decoration: underline;
+            color: #643646;
+            width: max-content;
+            border: 0;
+        }
+
+        a.ref:hover {
+            color: #475101;
+        }
+
+        a.ref:visited {
+            color: #2793e8;
+        }
+    </style>
   </head>
 
   <body>
@@ -26,8 +119,8 @@
 
     <p>This example also keeps track of the number of button presses, which is <span id = "presses">0</span>, and the last time you visited the page, which was <span id = "date"></span>.</p>
     
-    <p>
-        <a href="https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API/Using_IndexedDB">Here's the resource for more.</a>
+    <p style="width: auto;">
+        <a class="ref" href="https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API/Using_IndexedDB">Here's the resource for more.</a>
     </p>
 
   </body>
